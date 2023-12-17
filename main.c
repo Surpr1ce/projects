@@ -133,7 +133,12 @@ int main() {
 
     // Uloha 3
     char veduci[50] = "Miso";
-    printf("Celkova suma, ktoru ma veduci %s na svoje projekty: %0.2f", veduci, celkovaSumaPreVeduchoho(projekty, pocetProjektov, veduci));
+    double suma = celkovaSumaPreVeduchoho(projekty, pocetProjektov, veduci);
+    if(suma != -1) {
+        printf("Celkova suma, ktoru ma veduci %s na svoje projekty: %0.2f", veduci, suma);
+    } else {
+        printf("Veduci %s nebol najdeny.\n", veduci);
+    }
 
     // Uloha 4
     zapisDrahsieProjektyDoSuboru(projekty, pocetProjektov, "output.txt", 20000.0);
