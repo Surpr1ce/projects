@@ -1,0 +1,7 @@
+6
+A Fero 5 500.0
+B Miso 10 10000.0
+Be Miso 10 12350.0
+C Janka 1 300.0
+D Tibor 20 450000.0
+E Peter 8 20600.0
